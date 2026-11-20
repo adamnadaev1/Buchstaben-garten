@@ -91,7 +91,9 @@ svg.ic{width:1em;height:1em;fill:currentColor;flex:none}
 .brand-de{font-size:clamp(15px,2.3vmin,26px);color:var(--ink2);letter-spacing:.02em;margin-top:.1em}
 .home-credit{flex:none;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:.3em 1.4em;padding:0 clamp(12px,2.4vmin,32px) clamp(10px,1.8vmin,22px);margin-top:calc(clamp(4px,1vmin,12px) * -1);font-size:clamp(14px,2.1vmin,24px);color:var(--ink2);text-align:center}
 .home-credit b{color:var(--ink);font-weight:800}
-.home-credit .insta{display:inline-flex;align-items:center;gap:.35em}
+.home-credit .insta{display:inline-flex;align-items:center;gap:.35em;color:inherit;text-decoration:none;padding:.25em .5em;border-radius:999px}
+.home-credit .insta:active{background:var(--line)}
+.home-credit .insta b{text-decoration:underline;text-underline-offset:.15em}
 .home-credit svg{width:1.2em;height:1.2em;color:var(--ink)}
 .gear{position:relative}
 .gear .ring{position:absolute;inset:-6px;border-radius:50%;background:conic-gradient(var(--sf) calc(var(--p,0)*1turn),transparent 0);-webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 7px),#000 calc(100% - 6px));mask:radial-gradient(farthest-side,transparent calc(100% - 7px),#000 calc(100% - 6px));pointer-events:none}
@@ -519,7 +521,7 @@ svg.ic{width:1em;height:1em;fill:currentColor;flex:none}
   <div class="right"><button class="round-btn" id="btn-sound" aria-label="Ton an oder aus"></button><button class="round-btn" id="btn-full" aria-label="Vollbild"><svg class="ic"><use href="#i-full"/></svg></button></div>
  </header>
  <div class="tiles" id="tiles"></div>
- <footer class="home-credit"><span>Ein Projekt des <b>Tschetschenischen Kulturvereins Vorarlberg</b></span><span class="insta"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg>Instagram: <b>@tkv_vorarlberg</b></span></footer>
+ <footer class="home-credit"><span>Ein Projekt des <b>Tschetschenischen Kulturvereins Vorarlberg</b></span><a class="insta" href="https://www.instagram.com/tkv_vorarlberg/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg>Instagram: <b>@tkv_vorarlberg</b></a></footer>
 </section>
 <section id="scr-players" class="screen" aria-label="Wer spielt mit?">
  <header class="bar"><button class="round-btn home" data-home aria-label="Zur Startseite"><svg class="ic"><use href="#i-home"/></svg></button><div class="bar-title" id="pl-title"></div></header>
